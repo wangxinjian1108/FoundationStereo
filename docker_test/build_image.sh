@@ -1,0 +1,1 @@
+docker build --network=host -t xinjianwang/foundation_stereo:latest -f dockerfile.foundation_stereo ..
