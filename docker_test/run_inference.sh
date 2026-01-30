@@ -113,8 +113,8 @@ eval "docker run --gpus \"device=${GPU_ID}\" \
     -e CUDA_VISIBLE_DEVICES=${GPU_ID} \
     ${IMAGE_NAME} \
     python scripts/run_demo.py \
-        --left_file /app/input_assets/left.png \
-        --right_file /app/input_assets/right.png \
+        --left_file /app/input_assets/fleft_rectified.png \
+        --right_file /app/input_assets/bleft_rectified.png \
         --intrinsic_file /app/input_assets/K.txt \
         --ckpt_dir \"${CKPT_DIR}\" \
         --out_dir /app/output \
